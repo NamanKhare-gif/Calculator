@@ -34,18 +34,54 @@
 
     /* Borders & Effects */
     --border-color: #3A424D;
-    --shadow-color: rgba(0, 0, 0, 0.35);
+    --shadow-color: rgba(0, 0, 0, 0.4);
 }
 body{
     font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .calculator{
-    height: 460px;
+    background: #101010;
+    border: 5px solid #2D2D2D;
+    padding: 1px;
+    border-radius: 20px;
+    width: 324px;
+}
+
+.Main-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    height: 482px;
     width: 288px;
     border: 2px solid black;
+    border-radius: 20px;
     padding: 16px;
-    /* background-color: var(--bg-primary);     */
+    background-color: #2D2D2D;
+}
+
+.display{
+    height: 100px;
+    width: 288px;
+    background: #101010;
+    border-radius: 14px;
+    text-align: right;
+    padding-top: 15px;
+}
+
+.expression{
+    font-size: 14px;
+    color: #A0A0A0;
+    margin-right:15px;
+}
+
+.result{
+    font-size: 37px;
+    color: var(--text-white);
+    margin-right:15px;
 }
 
 .buttons{
@@ -63,17 +99,25 @@ body{
     font-size: 20px;
     font-weight: 500;
     color: var(--text-primary);
-    background-color: var(--btn-number);
+    /* background-color: var(--btn-number); */
+    background-color: #4d4d4d;
     box-shadow: 0px 10px 30px var(--shadow-color)
 }
 
-.btn-action{
-    background-color: var(--btn-action);
+.btn:hover{
+    background-color: #5D5D5D;
+    transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
 .btn-operator{
-    background-color: var(--btn-operator);
+    /* background-color: var(--btn-operator); */
+    background-color: #FF9500;
     font-size: 28px;
+}
+
+.btn-operator:hover{
+    background-color: #f9a632;
+    transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
 .btn-equal{

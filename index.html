@@ -13,57 +13,61 @@
 <body>
 
     <main class="calculator">
+        
+        <section class="Main-content">
 
-        <!-- Calculator Display -->
-        <section class="display">
-            <div class="expression" id="expression">
-                123 + 45 × 2
-            </div>
+            <!-- Calculator Display -->
+            <section class="display">
+                <div class="expression" id="expression">
+                    123 + 45 × 2
+                </div>
 
-            <div class="result" id="result">
-                213
-            </div>
+                <div class="result" id="result">
+                    213
+                </div>
+            </section>
+
+
+            <!-- Calculator Buttons -->
+            <section class="buttons">
+
+                <!-- Row 1 -->
+                <button class="btn btn-action" id="clear">AC</button>
+                <button class="btn btn-action" id="sign">+/-</button>
+                <button class="btn btn-action" id="percentage">%</button>
+                <button class="btn btn-operator" id="divide">÷</button>
+
+
+                <!-- Row 2 -->
+                <button class="btn btn-number" id="seven">7</button>
+                <button class="btn btn-number" id="eight">8</button>
+                <button class="btn btn-number" id="nine">9</button>
+                <button class="btn btn-operator" id="multiply">×</button>
+
+
+                <!-- Row 3 -->
+                <button class="btn btn-number" id="four">4</button>
+                <button class="btn btn-number" id="five">5</button>
+                <button class="btn btn-number" id="six">6</button>
+                <button class="btn btn-operator" id="subtract">-</button>
+
+
+                <!-- Row 4 -->
+                <button class="btn btn-number" id="one">1</button>
+                <button class="btn btn-number" id="two">2</button>
+                <button class="btn btn-number" id="three">3</button>
+                <button class="btn btn-operator" id="add">+</button>
+
+
+                <!-- Row 5 -->
+                <button class="btn btn-number btn-zero" id="zero">0</button>
+                <button class="btn btn-number" id="decimal">.</button>
+                <button class="btn btn-equal btn-operator" id="equals">=</button>
+
+            </section>
+
         </section>
-
-
-        <!-- Calculator Buttons -->
-        <section class="buttons">
-
-            <!-- Row 1 -->
-            <button class="btn btn-action" id="clear">AC</button>
-            <button class="btn btn-action" id="sign">+/-</button>
-            <button class="btn btn-action" id="percentage">%</button>
-            <button class="btn btn-operator" id="divide">÷</button>
-
-
-            <!-- Row 2 -->
-            <button class="btn btn-number" id="seven">7</button>
-            <button class="btn btn-number" id="eight">8</button>
-            <button class="btn btn-number" id="nine">9</button>
-            <button class="btn btn-operator" id="multiply">×</button>
-
-
-            <!-- Row 3 -->
-            <button class="btn btn-number" id="four">4</button>
-            <button class="btn btn-number" id="five">5</button>
-            <button class="btn btn-number" id="six">6</button>
-            <button class="btn btn-operator" id="subtract">-</button>
-
-
-            <!-- Row 4 -->
-            <button class="btn btn-number" id="one">1</button>
-            <button class="btn btn-number" id="two">2</button>
-            <button class="btn btn-number" id="three">3</button>
-            <button class="btn btn-operator" id="add">+</button>
-
-
-            <!-- Row 5 -->
-            <button class="btn btn-number btn-zero" id="zero">0</button>
-            <button class="btn btn-number" id="decimal">.</button>
-            <button class="btn btn-equal btn-operator" id="equals">=</button>
-
-        </section>
-
+        
     </main>
     
 </body>

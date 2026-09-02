@@ -1,26 +1,55 @@
-:root{
-    --Background: #1E1E1E;
-    --CalculatorBody: #2D2D2D;
-    --DisplayBody: #3C3C3C;
-    --NumberButton: #4D4D4D;
-    --PrimaryColor: #FF9500;
-    --TextColor: #F5F5F5;
-}
+:root {
+    /* Main Background */
+    --bg-primary: #0B0F14;
+    --bg-calculator: #151A21;
 
+    /* Button Colors */
+    --button-bg: #252B33;
+    --button-hover: #303741;
+    --btn-operator: #FF9F43;
+
+    /* Text Colors */
+    --text-primary: #F5F7FA;
+    --text-secondary: #9BA3AF;
+    --text-white: #FFFFFF;
+
+    /* Borders & Effects */
+    --border-color: #3A424D;
+    --shadow-color: rgba(0, 0, 0, 0.35);
+}
 body{
     font-family: "Poppins", sans-serif;
 }
 
+.calculator{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
 .btn{
+    cursor: pointer;
     width: 60px;
     height: 60px;
     border-radius: 14px;
     border: none;
     font-size: 20px;
     font-weight: 500;
+    color: var(--text-primary);
+    background-color: var(--button-bg);
 }
 
 .btn-operator{
-    background-color: var(--PrimaryColor);
-    color: var(--TextColor);
+    background-color: var(--btn-operator);
+}
+
+.btn-zero{
+    grid-column: span 2;
+    width: 136px;
 }
